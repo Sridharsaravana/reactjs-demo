@@ -1,6 +1,6 @@
 #!/bin/bash
 #Deploy script for prod branch
-    echo "Building image for dev branch ... "
+    echo "Building image for prod branch ... "
     docker build -t reactapp  .
     docker login -u sridharsaravana -p dckr_pat_fm9zwkuBm0qOstqPurVhQss74zg
     docker tag reactapp sridharsaravana/prod
